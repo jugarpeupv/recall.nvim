@@ -31,7 +31,7 @@ M.sorted_global_marks = function()
     table.insert(marks, { char = char, info = info })
   end)
   table.sort(marks, function(a, b)
-    return a.char < b.char
+    return a.char > b.char
   end)
   return marks
 end
