@@ -31,7 +31,7 @@ M.extension = function(opts)
         return {
           value = entry,
           display = display_entry,
-          ordinal = entry.char,
+          ordinal = entry.char .. " " .. entry.info.file,
           lnum = entry.info.pos[2],
           col = entry.info.pos[3] - 1,
           filename = entry.info.file,
